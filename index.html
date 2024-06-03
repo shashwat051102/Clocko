@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en" data-theme = "light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="procart.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/2460e15f1f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Clocko</title>
+  </head>
+  <body>
+    <!-- Navbar  -->
+
+    <div class="navbar_content navbar-custom">
+      <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            >Clocko<img src="icon.svg" class="nav_img" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.timeandwatches.com/" target="_blank">Blog</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Categories
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Wristwatch</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Wallclock</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Catalog</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button
+                class="btn btn-outline-success search-button"
+                type="submit"
+              >
+                Search
+              </button>
+            </form>
+
+            <!-- <div class="cart">
+              <i class="fas fa-shopping-cart"></i>
+</div> -->
+
+
+<!-- dark mode button -->
+
+
+              <div class="dark_mode">
+                <i class="fa-solid fa-sun theme_icon"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+
+
+<!-- Carousel -->
+
+
+
+    <div id="carousel">
+      <div id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="Slide 1.jpg" class="d-block w-100" alt="..." />
+            <!-- <div class="text-block">
+              <h1>Casio</h1>
+              <h4>Edifice</h4>
+            </div> -->
+          </div>
+          <div class="carousel-item">
+            <img src="Slide 2.jpg" class="d-block w-100" alt="..." />
+            <!-- <div class="text-block">
+              <h4>Slide 2</h4>
+            </div> -->
+          </div>
+          <div class="carousel-item">
+            <img src="Slide 3.jpg" class="d-block w-100" alt="..." />
+            <!-- <div class="text-block">
+              <h4>Slide 3</h4>
+            </div> -->
+          </div>
+          <div class="carousel-item">
+            <img src="Slide 4.jpg" class="d-block w-100" alt="..." />
+            <!-- <div class="text-block">
+              <h4>Slide 4</h4>
+            </div> -->
+          </div>
+          <div class="carousel-item">
+            <img src="Slide 5.jpg" class="d-block w-100" alt="..." />
+            <!-- <div class="text-block">
+              <h4>Slide 5</h4>
+            </div> -->
+          </div>
+          <div class="carousel-item">
+            <img src="Slide 6.jpg" class="d-block w-100" alt="..." />
+            <!-- <div class="text-block">
+              <h4>Slide 6</h4>
+            </div> -->
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+
+<!-- For Wrist watch -->
+
+
+    <div class="card-heading">
+      <h2>Wrist watch</h2>
+    </div>
+  
+    <!-- Dropdown menu -->
+    <div class="dropdown dropdown-filter">
+      <button class="btn btn-secondary dropdown-toggle wrist-filter" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="fa-solid fa-filter"></i>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item wrist-filter" href="#">Less than 20k</a></li>
+        <li><a class="dropdown-item wrist-filter" href="#">20k-30k</a></li>
+        <li><a class="dropdown-item wrist-filter" href="#">30k-70k</a></li>
+        <li><a class="dropdown-item wrist-filter" href="#">Above 70k</a></li>
+      </ul>
+    </div>
+
+    <div class="wrist-collection">
+      <div class="card wrist-Less-than-20k" style="width: 18rem">
+        <img src="Wristwatch/wrist1.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Casio Edifice</h5>
+          <p>Rs 10,999</p>
+          <div class="button-buy-cart">
+            <a href="#" class="btn btn-primary">Buy</a>
+            <a href="#" class="btn btn-primary btn-add-to-cart">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card wrist-Less-than-20k" style="width: 18rem">
+        <img src="Wristwatch/wrist2.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Rolex</h5>
+          <p>Rs 14,999</p>
+          <div class="button-buy-cart">
+            <a href="#" class="btn btn-primary">Buy</a>
+            <a href="#" class="btn btn-primary btn-add-to-cart">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card wrist-Less-than-20k" style="width: 18rem">
+        <img src="Wristwatch/wrist3.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Armani Emporio</h5>
+          <p>Rs 17,999</p>
+
+          <div class="button-buy-cart">
+            <a href="#" class="btn btn-primary">Buy</a>
+            <a href="#" class="btn btn-primary btn-add-to-cart">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card wrist-Less-than-20k" style="width: 18rem">
+        <img src="Wristwatch/wrist4.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Quartz</h5>
+          <p>Rs 13,999</p>
+
+          <div class="button-buy-cart">
+            <a href="#" class="btn btn-primary">Buy</a>
+            <a href="#" class="btn btn-primary btn-add-to-cart">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card wrist-Less-than-20k" style="width: 18rem">
+        <img src="Wristwatch/wrist5.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Rolex Deepsea</h5>
+          <p>Rs 19,999</p>
+
+          <div class="button-buy-cart">
+            <a href="#" class="btn btn-primary">Buy</a>
+            <a href="#" class="btn btn-primary btn-add-to-cart">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card wrist-30k-70k" style="width: 18rem">
+        <img src="Wristwatch/wrist6.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Apple watch</h5>
+          <p>Rs 30,999</p>
+
+          <div class="button-buy-cart">
+            <a href="#" class="btn btn-primary">Buy</a>
+            <a href="#" class="btn btn-primary btn-add-to-cart">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card wrist-Less-than-20k" style="width: 18rem">
+        <img src="Wristwatch/wrist7.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Citizen Eco-Drive</h5>
+          <p>Rs 15,999</p>
+
+          <div class="button-buy-cart">
+            <a href="#" class="btn btn-primary">Buy</a>
+            <a href="#" class="btn btn-primary btn-add-to-cart">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card wrist-20k-30k" style="width: 18rem">
+        <img src="Wristwatch/wrist8.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Fossil Hybrid</h5>
+          <p>Rs 25,999</p>
+
+          <div class="button-buy-cart">
+            <a href="#" class="btn btn-primary">Buy</a>
+            <a href="#" class="btn btn-primary btn-add-to-cart">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card wrist-Less-than-20k" style="width: 18rem">
+        <img src="Wristwatch/wrist9.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Astroz</h5>
+          <p>Rs 9,999</p>
+
+          <div class="button-buy-cart">
+            <a href="#" class="btn btn-primary">Buy</a>
+            <a href="#" class="btn btn-primary btn-add-to-cart">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card wrist-Less-than-20k" style="width: 18rem">
+        <img src="Wristwatch/wrist10.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Rolex Oyester</h5>
+          <p>Rs 12,999</p>
+
+          <div class="button-buy-cart">
+            <a href="#" class="btn btn-primary">Buy</a>
+            <a href="#" class="btn btn-primary btn-add-to-cart">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card wrist-30k-70k" style="width: 18rem">
+        <img src="Wristwatch/wrist11.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Adamkimmel</h5>
+          <p>Rs 60,999</p>
+
+          <div class="button-buy-cart">
+            <a href="#" class="btn btn-primary">Buy</a>
+            <a href="#" class="btn btn-primary btn-add-to-cart">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card wrist-Less-than-20k" style="width: 18rem">
+        <img src="Wristwatch/wrist12.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Sonata</h5>
+          <p>Rs 11,999</p>
+
+          <div class="button-buy-cart">
+            <a href="#" class="btn btn-primary">Buy</a>
+            <a href="#" class="btn btn-primary btn-add-to-cart">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="card wrist-Above-70k" style="width: 18rem">
+        <img src="Wristwatch/wrist13.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Fossil Lux</h5>
+          <p>Rs 1,20,999</p>
+
+          <div class="button-buy-cart">
+            <a href="#" class="btn btn-primary">Buy</a>
+            <a href="#" class="btn btn-primary btn-add-to-cart">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="card wrist-20k-30k" style="width: 18rem">
+        <img src="Wristwatch/wrist14.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Quartz Antique</h5>
+          <p>Rs 24,999</p>
+
+          <div class="button-buy-cart">
+            <a href="#" class="btn btn-primary">Buy</a>
+            <a href="#" class="btn btn-primary btn-add-to-cart">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="card wrist-Less-than-20k" style="width: 18rem">
+        <img src="Wristwatch/wrist15.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Michael Kors</h5>
+          <p>Rs 18,999</p>
+
+          <div class="button-buy-cart">
+            <a href="#" class="btn btn-primary">Buy</a>
+            <a href="#" class="btn btn-primary btn-add-to-cart">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="card wrist-Less-than-20k" style="width: 18rem">
+        <img src="Wristwatch/wrist16.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Fit Dash pro</h5>
+          <p>Rs 11,999</p>
+
+          <div class="button-buy-cart">
+            <a href="#" class="btn btn-primary">Buy</a>
+            <a href="#" class="btn btn-primary btn-add-to-cart">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="load-more-wrist">
+      <button>Load More</button>
+    </div>
+
+
+    <!-- Wall-Clock -->
+
+
+    <div class="card-heading">
+      <h2>Wallclock</h2>
+    </div>
+    <!-- Dropdown menu -->
+    <div class="dropdown dropdown-filter">
+      <button class="btn btn-secondary dropdown-toggle wall-filter" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="fa-solid fa-filter"></i>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item wall-filter" href="#">Less than 20k</a></li>
+        <li><a class="dropdown-item wall-filter" href="#">20k-30k</a></li>
+        <li><a class="dropdown-item wall-filter" href="#">30k-70k</a></li>
+        <li><a class="dropdown-item wall-filter" href="#">Above 70k</a></li>
+      </ul>
+    </div>
+
+    <div class="wall-collection">
+      <div class="card wall-Less-than-20k" style="width: 18rem">
+        <img src="Wallclock/wall1.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Seiko</h5>
+          <p>Rs 11,999</p>
+          <div class="button-buy-cart">
+            <a href="#" class="btn btn-primary">Buy</a>
+            <a href="#" class="btn btn-primary btn-add-to-cart">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card wall-30k-70k" style="width: 18rem">
+        <img src="Wallclock/wall2.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Beach Huts</h5>
+          <p>Rs 30,999</p>
+
+          <div class="button-buy-cart">
+            <a href="#" class="btn btn-primary">Buy</a>
+            <a href="#" class="btn btn-primary btn-add-to-cart">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card wall-Less-than-20k" style="width: 18rem">
+        <img src="Wallclock/wall3.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Howard Miller</h5>
+          <p>Rs 15,999</p>
+
+          <div class="button-buy-cart">
+            <a href="#" class="btn btn-primary">Buy</a>
+            <a href="#" class="btn btn-primary btn-add-to-cart">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card wall-20k-30k" style="width: 18rem">
+        <img src="Wallclock/wall4.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Ingraham</h5>
+          <p>Rs 20,999</p>
+
+          <div class="button-buy-cart">
+            <a href="#" class="btn btn-primary">Buy</a>
+            <a href="#" class="btn btn-primary btn-add-to-cart">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card wall-Less-than-20k" style="width: 18rem">
+        <img src="Wallclock/wall5.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Rhythm</h5>
+          <p>Rs 17,999</p>
+
+          <div class="button-buy-cart">
+            <a href="#" class="btn btn-primary">Buy</a>
+            <a href="#" class="btn btn-primary btn-add-to-cart">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card wall-20k-30k" style="width: 18rem">
+        <img src="Wallclock/wall6.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Hermle</h5>
+          <p>Rs 25,999</p> 
+
+          <div class="button-buy-cart">
+            <a href="#" class="btn btn-primary">Buy</a>
+            <a href="#" class="btn btn-primary btn-add-to-cart">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card wall-Less-than-20k" style="width: 18rem">
+        <img src="Wallclock/wall7.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Citizen</h5>
+          <p>Rs 19,999</p>
+
+          <div class="button-buy-cart">
+            <a href="#" class="btn btn-primary">Buy</a>
+            <a href="#" class="btn btn-primary btn-add-to-cart">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card wall-20k-30k" style="width: 18rem">
+        <img src="Wallclock/wall8.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Karlsson</h5>
+          <p>Rs 24,999</p>
+
+          <div class="button-buy-cart">
+            <a href="#" class="btn btn-primary">Buy</a>
+            <a href="#" class="btn btn-primary btn-add-to-cart">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card wall-30k-70k" style="width: 18rem">
+        <img src="Wallclock/wall9.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Equity by La Crosse</h5>
+          <p>Rs 39,999</p>
+
+          <div class="button-buy-cart">
+            <a href="#" class="btn btn-primary">Buy</a>
+            <a href="#" class="btn btn-primary btn-add-to-cart">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card wall-30k-70k" style="width: 18rem">
+        <img src="Wallclock/wall10.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Infinity Instruments</h5>
+          <p>Rs 40,999</p>
+
+          <div class="button-buy-cart">
+            <a href="#" class="btn btn-primary">Buy</a>
+            <a href="#" class="btn btn-primary btn-add-to-cart">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card wall-30k-70k" style="width: 18rem">
+        <img src="Wallclock/wall11.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Kensington</h5>
+          <p>Rs 54,599</p>
+
+          <div class="button-buy-cart">
+            <a href="#" class="btn btn-primary">Buy</a>
+            <a href="#" class="btn btn-primary btn-add-to-cart">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card wall-Less-than-20k" style="width: 18rem">
+        <img src="Wallclock/wall12.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Timex</h5>
+          <p>Rs 19,999</p>
+
+          <div class="button-buy-cart">
+            <a href="#" class="btn btn-primary">Buy</a>
+            <a href="#" class="btn btn-primary btn-add-to-cart">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="card wall-Above-70k" style="width: 18rem">
+        <img src="Wallclock/wall13.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Seth Thomas</h5>
+          <p>Rs 1,99,999</p>
+
+          <div class="button-buy-cart">
+            <a href="#" class="btn btn-primary">Buy</a>
+            <a href="#" class="btn btn-primary btn-add-to-cart">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="card wall-Less-than-20k" style="width: 18rem">
+        <img src="Wallclock/wall14.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Grand Central</h5>
+          <p>Rs 10,599</p>
+
+          <div class="button-buy-cart">
+            <a href="#" class="btn btn-primary">Buy</a>
+            <a href="#" class="btn btn-primary btn-add-to-cart">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="card wall-Less-than-20k" style="width: 18rem">
+        <img src="Wallclock/wall15.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Westclox</h5>
+          <p>Rs 19,000</p>
+
+          <div class="button-buy-cart">
+            <a href="#" class="btn btn-primary">Buy</a>
+            <a href="#" class="btn btn-primary btn-add-to-cart">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="card wall-30k-70k" style="width: 18rem">
+        <img src="Wallclock/wall16.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Cyclock</h5>
+          <p>Rs 67,000</p>
+
+          <div class="button-buy-cart">
+            <a href="#" class="btn btn-primary">Buy</a>
+            <a href="#" class="btn btn-primary btn-add-to-cart">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="card wall-30k-70k" style="width: 18rem">
+        <img src="Wallclock/wall17.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Buzzclock</h5>
+          <p>Rs 40,000</p>
+
+          <div class="button-buy-cart">
+            <a href="#" class="btn btn-primary">Buy</a>
+            <a href="#" class="btn btn-primary btn-add-to-cart">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="card wall-Above-70k" style="width: 18rem">
+        <img src="Wallclock/wall18.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Wintaclock</h5>
+          <p>Rs 3,00,000</p>
+
+          <div class="button-buy-cart">
+            <a href="#" class="btn btn-primary">Buy</a>
+            <a href="#" class="btn btn-primary btn-add-to-cart">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="card wall-Above-70k" style="width: 18rem">
+        <img src="Wallclock/wall19.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Astheticlock</h5>
+          <p>Rs 80,000</p>
+
+          <div class="button-buy-cart">
+            <a href="#" class="btn btn-primary">Buy</a>
+            <a href="#" class="btn btn-primary btn-add-to-cart">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="load-more-wall">
+      <button>Load More</button>
+    </div>
+
+
+<!-- Complaints -->
+
+
+    <div class="complaints">
+      <h3>Complaints</h3>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label"
+          >Email address</label
+        >
+        <input
+          type="email"
+          class="form-control"
+          id="exampleFormControlInput1"
+          placeholder="name@example.com"
+        />
+        <button>Load More</button>
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label"
+          >Example text area</label
+        >
+        <textarea
+          class="form-control"
+          id="exampleFormControlTextarea1"
+          rows="3"
+        ></textarea>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="procart.js"></script>
+  </body>
+</html>
